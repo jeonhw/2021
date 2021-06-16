@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>index</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../lib/vegas.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="css/projectM.css" />
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <!-- <nav>
+        <ul>
+            <li>
+                <div id="btn1">MAIN</div>
+            </li>
+            <li>
+                <div id="btn2">PORTFOLIO</div>
+            </li>
+            <li>
+                <div id="btn3">ABOUT ME</div>
+            </li>
+        </ul>
+    </nav> -->
+
+    <div id="container">
+        <div id="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"
+                xml:space="preserve">
+                <defs>
+                    <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none" />
+                <g>
+                    <use xlink:href="#circlePath" fill="none" />
+                    <text fill="#171400">
+                        <textPath xlink:href="#circlePath">WELCOME 2021 WEB PORTFOLIO JEONHYEWON
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <header>
+        <ul class="intro">
+            <li>
+                <span>Web Publisher<br>and Designer</span>
+                <span>Jeonhyewon</span>
+            </li>
+            <li>
+                <span>contact</span>
+                <span>+82 10-7613-3922</span>
+            </li>
+            <li>
+                <span>E-MAIL</span>
+                <span>yangyome33@gmail.com</span>
+            </li>
+        </ul>
+        <div class="inner">
+
+            <!-- <div class="swiper-container mySwiper title">
+                <div class="swiper-wrapper title">
+                    <div class="swiper-slide">
+                        <div class="text">
+                            Hi
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">
+                            Welcome
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">
+                            Web Publishing
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">
+                            Web Design
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+     <div class="myname">
+        One and Only
+     </div>
+
+            <!-- 타이틀 후보1 -->
+
+            <ul class="subintro">
+                <li class="one">
+                    <p>From</p>
+                    <p>WEB DESIGN</p>
+                </li>
+                <li>
+                    <p>To</p>
+                    <p>PUBLISHING</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="sec one">
+        <div class='lefttitle'>
+            <h1>Portfolio</h1>
+        </div>
+        <div class="inner">
+            <p>Jeon Hye Won</p>
+        </div>
+    </section>
+
+    <section class="sec two">
+
+        <div class="inner">
+
+            <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                <div class="txtzone">
+
+                    <span>2021 Portfolio Seoul Hanok Portal</span>
+                    <h2>Luise Poulsen</h2>
+                    <p>1874년 설립된 덴마크의 조명 기기 제조업체인 루이스폴센의 한국 공식 홈페이지 리뉴얼 프로젝트입니다.
+                    </p>
+                    <div class="button">
+                        <a href="https://jeonhw.github.io/Hanok/">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container mySwiper web">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                    </div>
+                    <div class="swiper-slide two"></div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec three">
+
+        <div class="inner">
+            <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+
+                <div class="txtzone">
+                    <span>2021 Portfolio Seoul Hanok Portal</span>
+                    <h2>서울한옥포털</h2>
+                    <p>한국을 대표하는 한옥의 디자인과 전통성을 살린 한국적인 색감과 한옥의 정취가 느껴지는 비주얼 섹션을 사용한 서울 한옥 포털 홈페이지 리뉴얼입니다.
+                    </p>
+                    <div class="button">
+                        <a href="https://jeonhw.github.io/Hanok/">learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down">
+                <div class="swiper-container mySwiper web">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide one">
+
+                        </div>
+                        <div class="swiper-slide two"></div>
+                        <div class="swiper-slide">Slide 3</div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="js/jquery-ui.min.js"></script> -->
+    <script>AOS.init();</script>
+    <script src="js/project.js"></script>
+</body>
+
+</html>

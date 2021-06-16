@@ -1,0 +1,562 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    /* color: black; */
+    text-decoration: none;
+    list-style: none;
+    /* border: 1px solid palegoldenrod; */
+}
+
+body{
+    color: linear-gradient(to right, rgb(239, 239, 187), rgb(212, 211, 221));
+}
+
+/* nav ul li div {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+
+} */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 200;
+}
+
+.sidebar a {
+    font-weight: 100;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    /* padding: 16px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+.section {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+}
+
+
+section .sec.one {
+    display: none;
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif KR', serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+.button {
+    font-size: 1.4rem;
+    font-weight: 200;
+    border: 1px solid #3c3b3f;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #3c3b3f;
+    transition: all 1s;
+}
+
+
+.button:hover a {
+    color: white;
+
+}
+
+
+.button a {
+    text-decoration: none;
+    color: #3c3b3f;
+}
+
+section {
+    height: 100vh;
+    background: #F7F4EF;
+    /* background: ; */
+    width: 100%;
+    border-bottom: 1px solid #3c3b3f;
+
+}
+
+section:nth-child(2) {
+    height: 100vh;
+    background: #f7f1e7;
+    /* background: ; */
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: #F7F4EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+header ul.intro {
+    width: 90%;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+header ul.intro li {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+header ul.intro li span:nth-child(1) {
+    font-weight: 550;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+}
+
+header ul.intro li span:nth-child(2) {
+    font-weight: 200;
+}
+
+header ul.subintro {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+}
+
+
+header ul.subintro li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+header ul.subintro::after {
+    content: "";
+    width: 29%;
+    height: 0.5px;
+    background: #3c3b3f;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    right: -36%;
+    bottom: 50%;
+    left: 36%;
+}
+
+
+header ul.subintro li p:nth-child(1) {
+    font-family: 'popins';
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+header ul.subintro li p:nth-child(2) {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    letter-spacing: 0.31rem;
+    font-size: 2rem;
+}
+
+
+header p.maintitle {
+    background: linear-gradient(to right, #3c3b3f, #605c3c);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    font-size: 10rem;
+    font-weight: 100;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /* font-style: italic; */
+    letter-spacing: 2.4rem;
+    text-align: center;
+}
+
+header span {
+    text-align: left;
+    /* margin: 0 auto;/ */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    width: 1400px;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid #6b4b23; */
+}
+
+header .inner {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+header div.text {
+    text-align: center;
+    font-size: 8rem;
+    /* font-weight: 100; */
+    position: relative;
+}
+
+header div.text::before {
+    content: "Portfolio";
+    position: absolute;
+    top: 0px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+div.myname {
+    font-size: 13rem;
+    /* text-align: center; */
+    font-weight: 700;
+    position: fixed;
+    opacity: 0.03;
+    /* padding: 13rem; */
+    line-height: -24rem;
+}
+
+section .sec.one h1 {
+    font-family: 'poppins';
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+div.lefttitle {
+    transform: rotate(270deg);
+    /* width: 145px; */
+    /* height: 145px; */
+    font-weight: 100;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    /* position: sticky; */
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+}
+
+section.sec.one div.titlem h1 {
+    font-weight: 200;
+}
+
+section.sec.one {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section.sec.one .inner {
+    display: flex;
+    align-items: center;
+}
+
+section.sec .inner {
+    justify-content: space-between;
+}
+
+section .sec .titlem {
+    align-items: center;
+}
+
+section.sec.two .swiper-slide.one {
+    background: url(../img/마스크\ 그룹\ 121.png) 50% 50% no-repeat;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 7px;
+    z-index: 10;
+}
+
+section.sec.two .swiper-slide.two {
+    background: url(../img/마스크\ 그룹\ 127.png) 50% 50% no-repeat;
+    width: 932px;
+    height: 666px;
+    background-size: cover;
+    border-radius: 7px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section.sec div.txtzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.sec div.txtzone h2 {
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+
+section.sec div.txtzone p {
+    width: 454px;
+    /* height: 87px; */
+    font-family: 'noto sans kr';
+    font-size: 1.2rem;
+    font-weight: 100;
+    /* margin: 1.2rem 0; */
+    padding-right: 4rem;
+    opacity: 0.9;
+    line-height: 2rem;
+    /* margin: 1rem 0; */
+    margin-bottom: 2rem;
+}
+
+section.sec.three div.txtzone h2 {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.swiper-wrapper.title {
+    align-items: center;
+    height: 0;
+}
+
+
+/* 써클 로테이트 애니메이션 */
+#container {
+    margin: 0%;
+}
+
+#circle {
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 100%; */
+    /* overflow: hidden; */
+    cursor: pointer;
+    height: 0px;
+    z-index: 100;
+
+}
+
+#circle text {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: 100;
+}
+
+#circle svg {
+    position: fixed;
+    left: 0;
+    top: 15%;
+    width: 22%;
+    height: auto;
+    -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+    -ms-animation-name: rotate;
+    -o-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+
+    to {
+        -moz-transform: rotate(0);
+    }
+}
+
+@-ms-keyframes rotate {
+    from {
+        -ms-transform: rotate(360deg);
+    }
+
+    to {
+        -ms-transform: rotate(0);
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(360deg);
+    }
+
+    to {
+        -o-transform: rotate(0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #402323;
+}
+
+section.sec.two {
+    display: flex;
+    flex-direction: row;
+}
