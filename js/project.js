@@ -37,12 +37,12 @@ var swiper = new Swiper(".mySwiper.title", {
   });
 
 
-
+// 메뉴 클릭시 원하는 슬라이드로 이동가능 네비기능
 $(document).ready(function () {
 
     $('#btn1').click(function () {
 
-        var offset = $('header').offset(); //선택한 태그의 위치를 반환
+        var offset = $('.sec.one').offset(); //선택한 태그의 위치를 반환
 
         //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
 

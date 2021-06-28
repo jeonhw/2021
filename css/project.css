@@ -68,6 +68,7 @@ body{
     padding: 10px 15px;
     border: none;
     position: fixed;
+    z-index:100;
 }
 
 .openbtn:hover {
@@ -110,7 +111,7 @@ section .sec.one {
 
 
 .button {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 200;
     border: 1px solid #3c3b3f;
     width: 150px;
@@ -119,15 +120,17 @@ section .sec.one {
     justify-content: center;
     border-radius: 5px;
     cursor: pointer;
+    padding: 0.3rem 0;
+    margin-top: 1rem;
 }
 
 .button:hover {
     background: #3c3b3f;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 
-.button:hover a {
+div.button:hover a {
     color: white;
 
 }
@@ -136,6 +139,7 @@ section .sec.one {
 .button a {
     text-decoration: none;
     color: #3c3b3f;
+    font-weight: 300;
 }
 
 section {
@@ -271,6 +275,7 @@ header .inner {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    border-bottom: 1px solid;
 }
 
 
@@ -296,6 +301,9 @@ div.myname {
     opacity: 0.03;
     /* padding: 13rem; */
     line-height: -24rem;
+    z-index: 1;
+    /* display: none; */
+    /* 배경에 따라다니는 one and only */
 }
 
 section .sec.one h1 {
@@ -335,7 +343,7 @@ section.sec.one .inner {
 }
 
 section.sec .inner {
-    justify-content: space-between;
+    justify-content: center;
 }
 
 section .sec .titlem {
@@ -361,14 +369,117 @@ section.sec.two .swiper-slide.two {
 }
 
 
+section.sec.two div.inner>div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background: #000; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.titles{
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+div.titles>span{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+div.pfbox {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+div.pfbox ul:nth-child(1) p{
+    transition: all 1s ease;
+    /* opacity: 0; */
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+div.pfbox>ul{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    background: #F7F4EF;
+    border-radius: 20px;
+    border: 1px solid #707070;
+    transition: all  0.5s ease;
+    /* background: rgba(0, 0, 0, 0.2); */
+    /* 배경 투명돈데 호버하면 들어가게 하고 싶지 지금은 아님.. */
+    cursor: pointer;
+}
+
+div.pfbox>ul:hover{
+    transition: all  0.5s ease;
+    /* color: white; */
+    /* background: url(/img/마스크\ 그룹\ 110.png); */
+}
+
+li.bg{
+    width: 100%;
+    height: 100%;
+}
+
+div.pfbox>ul:hover > div.pfbox>ul>li>*
+{
+    display: none;
+    transition: all 1s ease;
+}
 
 
 
 
+div.pfbox>ul li:nth-child(1) {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1rem;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 
+div.pfbox h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'poppins';
+}
 
+div.pfbox>ul:nth-child(2) h1{
+    font-family: 'Noto Serif KR', serif;
+}
 
+div.pfbox>ul div.info{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #707070;
+}
+
+div.pfbox>ul li.program{
+    font-weight: 100;
+}
+
+/* section.sec.two p{
+    font-family: 'Noto Sans KR';
+    font-size: 1.5rem;
+    font-weight: 300;
+
+} */
 
 
 section.sec div.txtzone {
@@ -420,7 +531,7 @@ section.sec.three div.txtzone h2 {
     cursor: pointer;
     height: 0px;
     z-index: 100;
-
+    /* display: none; */
 }
 
 #circle text {
@@ -456,6 +567,7 @@ section.sec.three div.txtzone h2 {
     -ms-animation-timing-function: linear;
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
+    /* display: none; */
 }
 
 @-webkit-keyframes rotate {
@@ -560,3 +672,5 @@ section.sec.two {
     display: flex;
     flex-direction: row;
 }
+
+
