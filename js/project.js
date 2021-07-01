@@ -89,7 +89,13 @@ $('.side-bar').click(function() {
     else {
         $(this).addClass('active')
     }
+
+
+
 });
+
+
+
 
 
 AOS.init();

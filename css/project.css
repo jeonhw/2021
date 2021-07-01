@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-
+    color: white;
     margin: 0;
     padding: 0;
     /* color: black; */
@@ -16,6 +16,7 @@
 
 body{
     color: linear-gradient(to right, rgb(239, 239, 187), rgb(212, 211, 221));
+    background: linear-gradient(to right, rgb(185, 147, 214), rgb(140, 166, 219));
 }
 
 /* nav ul li div {
@@ -60,6 +61,7 @@ body{
     margin-left: 50px;
 }
 
+
 .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -68,7 +70,7 @@ body{
     padding: 10px 15px;
     border: none;
     position: fixed;
-    z-index:100;
+    z-index:10;
 }
 
 .openbtn:hover {
@@ -98,6 +100,7 @@ body{
 
 section .sec.one {
     display: none;
+
 }
 
 :root {
@@ -113,7 +116,7 @@ section .sec.one {
 .button {
     font-size: 1.2rem;
     font-weight: 200;
-    border: 1px solid #3c3b3f;
+    border: 1px solid #ffffff;
     width: 150px;
     display: flex;
     align-items: center;
@@ -138,13 +141,13 @@ div.button:hover a {
 
 .button a {
     text-decoration: none;
-    color: #3c3b3f;
+    /* color: #3c3b3f; */
     font-weight: 300;
 }
 
 section {
     height: 100vh;
-    background: #F7F4EF;
+    /* background: #F7F4EF;
     /* background: ; */
     width: 100%;
     border-bottom: 1px solid #3c3b3f;
@@ -162,7 +165,7 @@ section:nth-child(2) {
 header {
     width: 100%;
     height: 100vh;
-    background: #F7F4EF;
+    /* background: #F7F4EF; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +218,7 @@ header ul.subintro::after {
     content: "";
     width: 29%;
     height: 0.5px;
-    background: #3c3b3f;
+    background: #ffffff;
     position: absolute;
     top: 50%;
     right: 0%;
@@ -268,6 +271,7 @@ header span {
     margin: 0 auto;
     height: 100%;
     display: flex;
+    flex-direction: column;
     /* border: 1px solid #6b4b23; */
 }
 
@@ -277,6 +281,7 @@ header .inner {
     width: 100%;
     border-bottom: 1px solid;
 }
+
 
 
 header div.text {
@@ -298,10 +303,10 @@ div.myname {
     /* text-align: center; */
     font-weight: 700;
     position: fixed;
-    opacity: 0.03;
+    opacity: 0.06;
     /* padding: 13rem; */
     line-height: -24rem;
-    z-index: 1;
+    /* z-index: 1; */
     /* display: none; */
     /* 배경에 따라다니는 one and only */
 }
@@ -325,12 +330,17 @@ div.lefttitle {
     flex-wrap: wrap;
     position: absolute;
     top: 50%;
+    display: none;
 }
 
 section.sec.one div.titlem h1 {
     font-weight: 200;
 }
 
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
 section.sec.one {
     display: flex;
     align-items: center;
@@ -340,6 +350,50 @@ section.sec.one {
 section.sec.one .inner {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    /* height: fit-content; */
+    /* width: 100%; */
+    height: 100%;
+    justify-content: space-evenly;
+}
+section.sec.one .inner div.profile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* 임시방편 */
+    /* border: 1px solid; */
+}
+
+
+div.profile ul{
+    width: 250px;
+}
+
+
+div.profile ul li:nth-child(1){
+    font-family: 'poppins';
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+div.profile ul li{
+    font-weight: 100;
+}
+
+section.sec.one .inner div.hi{
+    display: inline-block;
+    left: 0;
+    width: 100%;
+}
+
+
+section.sec.one .inner div.hi p{
+    font-size: 7rem;
+    font-weight: 500;
+    line-height: 9rem;
+    font-family: 'Noto Sans KR';
+
 }
 
 section.sec .inner {
@@ -372,12 +426,13 @@ section.sec.two .swiper-slide.two {
 section.sec.two div.inner>div {
     display: flex;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     /* background: #000; */
     flex-direction: column;
     justify-content: center;
+    /* display: none; */
+    margin-bottom: 3rem;
 }
-
 div.titles{
     align-items: center;
     margin: 0 auto;
@@ -404,6 +459,9 @@ div.pfbox ul:nth-child(1) p{
     /* height: 100%; */
 }
 
+/* bg 다 빼고 바디에 주니까 갑자디 다 입혀짐 
+ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ */
+
 
 div.pfbox>ul{
     width: 400px;
@@ -417,6 +475,7 @@ div.pfbox>ul{
     border-radius: 20px;
     border: 1px solid #707070;
     transition: all  0.5s ease;
+    background: rgba(255, 255, 255, 0.4);
     /* background: rgba(0, 0, 0, 0.2); */
     /* 배경 투명돈데 호버하면 들어가게 하고 싶지 지금은 아님.. */
     cursor: pointer;
@@ -466,8 +525,8 @@ div.pfbox>ul:nth-child(2) h1{
 div.pfbox>ul div.info{
     font-weight: 400;
     font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #707070;
+    margin:0.5rem 0;
+    /* color: #707070; */
 }
 
 div.pfbox>ul li.program{
@@ -530,7 +589,7 @@ section.sec.three div.txtzone h2 {
     /* overflow: hidden; */
     cursor: pointer;
     height: 0px;
-    z-index: 100;
+    /* z-index: 10; */
     /* display: none; */
 }
 
@@ -543,7 +602,7 @@ section.sec.three div.txtzone h2 {
 
 #circle svg {
     position: fixed;
-    left: 0;
+    left: 58%;
     top: 15%;
     width: 22%;
     height: auto;
