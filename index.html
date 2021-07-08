@@ -9,6 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../lib/vegas.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- slick sldier cdn -->
     <link rel="stylesheet" href="css/project.css" />
     <link rel="stylesheet" media="all and (max-width: 640px)" href="css/projectM.css" />
 </head>
@@ -19,10 +21,10 @@
         <a href="#" id="btn1">About</a>
         <a href="#" id="btn2">Portfolio</a>
         <a href="#" id="btn3">Contact</a>
-        <a href="#" id ="sns">SNS
+        <a href="#" id ="sns">SNS</a>
             <!-- <embed src = ""> -->
             <!-- 임베디드로 이력서 자소서 pdf 자리  -->
-            </a>
+            
     </div>
 
     <button class="openbtn" onclick="openNav()">☰</button>
@@ -38,6 +40,7 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
         }
+    
     </script>
 
     <!-- <nav>
@@ -65,7 +68,7 @@
                 <circle cx="150" cy="100" r="75" fill="none" />
                 <g>
                     <use xlink:href="#circlePath" fill="none" />
-                    <text fill="#fff">
+                    <text fill="#000">
                         <textPath xlink:href="#circlePath">WELCOME 2021 WEB PORTFOLIO JEONHYEWON
                         </textPath>
                     </text>
@@ -118,21 +121,17 @@
 
 
             <div class="myname">
-                One and Only
+                <!-- <P>
+                    Web Publisher
+                </P> -->
+
             </div>
 
             <!-- 타이틀 후보1 -->
-
-            <ul class="subintro">
-                <li class="one">
-                    <p>From</p>
-                    <p>WEB DESIGN</p>
-                </li>
-                <li>
-                    <p>To</p>
-                    <p>PUBLISHING</p>
-                </li>
-            </ul>
+            <div class="backtxt">
+                <span>Web Publisher</span>
+                <span>전혜원입니다.</span>
+            </div>
         </div>
     </header>
 
@@ -147,16 +146,17 @@
             </div>
             <div class = "profile">
                 <ul>
+
                     <li>Education</li>
                     <li>연암공과대학교 시각디자인전공</li>
                     <li>청주이지디자인 웹퍼블리셔과정 수료</li>
                 </ul>
                 <ul>
                     <li>Skills</li>
-                    <li>Photoshop</li>
-                    <li>Illustration</li>
-                    <li>InDesign</li>
-                    <li>Html·CSS·jquery·js</li>
+                    <li>포토샵</li>
+                    <li>일러스트레이션</li>
+                    <li>인디자인</li>
+                    <li>비주얼스튜디오코드</li>
                 </ul>
                 <ul>
                     <li>license</li>
@@ -207,9 +207,21 @@
         </div>
     </section>
 
-    <section class="footer">
+    <footer class ="footer">
         <!-- <h1> 서울한옥포털</h1> -->
         <div class="inner">
+            <p>get in touch</p>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="hidden" name="contact-number">
+                    <input type="text" name="user_name" placeholder="Name*"
+                    class="input_name">
+                    <input type="email" name ="user_name" placeholder = "Email*"
+                    class = "input_email">
+                    <textarea name="message" id="Message*" class="input_message"></textarea>
+                    <input type="submit" value="Send" title="전송하기">
+                </form>
+            </div>
             <!-- <span>PORTFOLIO</span> -->
         </div>
         <div data-aos="fade-down">
@@ -225,12 +237,14 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
+    </footer>
 
 
 
 
-
+    <script>
+    $('.single-item').slick();
+    </script>
 
 
 
@@ -247,6 +261,7 @@
     <!-- <script src="js/jquery-ui.min.js"></script> -->
     <script>AOS.init();</script>
     <script src="js/project.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
     color: white;
     margin: 0;
     padding: 0;
-    /* color: black; */
+    color: black;
     text-decoration: none;
     list-style: none;
     /* border: 1px solid palegoldenrod; */
@@ -16,7 +16,7 @@
 
 body{
     color: linear-gradient(to right, rgb(239, 239, 187), rgb(212, 211, 221));
-    background: linear-gradient(to right, rgb(185, 147, 214), rgb(140, 166, 219));
+    /* background: linear-gradient(to right, rgb(185, 147, 214), rgb(140, 166, 219)); */
 }
 
 /* nav ul li div {
@@ -51,6 +51,8 @@ body{
 
 .sidebar a:hover {
     color: #f1f1f1;
+    letter-spacing: 0.4rem;
+    transition: all 0.6s;
 }
 
 .sidebar .closebtn {
@@ -65,17 +67,23 @@ body{
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+    background-color: rgb(255 255 255);
+    color: black;
+    padding: 10px 11px;
+    border-right: 1px solid black;
     position: fixed;
-    z-index:10;
+    z-index: 10;
+    height: 100vh;
 }
 
 .openbtn:hover {
-    background-color: #444;
+    background-color:black;
+    color: white;
 }
+
+
+
+
 
 #main {
     transition: margin-left .5s;
@@ -125,6 +133,7 @@ section .sec.one {
     cursor: pointer;
     padding: 0.3rem 0;
     margin-top: 1rem;
+    border: 1px solid black;
 }
 
 .button:hover {
@@ -266,7 +275,7 @@ header span {
 }
 
 .inner {
-    width: 1400px;
+    width: 1300px;
     align-items: center;
     margin: 0 auto;
     height: 100%;
@@ -276,7 +285,7 @@ header span {
 }
 
 header .inner {
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     width: 100%;
     border-bottom: 1px solid;
@@ -299,16 +308,48 @@ header div.text::before {
     font-weight: 100;
 }
 div.myname {
-    font-size: 13rem;
+    flex-direction: column;
+    font-size: 12rem;
     /* text-align: center; */
     font-weight: 700;
-    position: fixed;
-    opacity: 0.06;
+    position: absolute;
     /* padding: 13rem; */
     line-height: -24rem;
     /* z-index: 1; */
     /* display: none; */
-    /* 배경에 따라다니는 one and only */
+    display: flex;
+    line-height: 18rem;
+
+}
+
+div.myname p{
+    color:rgba(255, 255, 255, 0.637);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0000008f;
+}
+
+
+div.backtxt{
+    font-size: 12rem;
+}
+
+div.backtxt span {
+    font-size: 12.5rem;
+    /* color: black;/ */
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0000008f;
+    /* font-family: 'Noto Sans KR'; */
+    line-height: 17.4rem;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+div.backtxt span:hover{
+    -webkit-text-fill-color: #000;
+    transition: all 0.2s;
 }
 
 section .sec.one h1 {
@@ -602,10 +643,10 @@ section.sec.three div.txtzone h2 {
 
 #circle svg {
     position: fixed;
-    left: 58%;
-    top: 15%;
-    width: 22%;
-    height: auto;
+    left: 60%;
+    top: 3%;
+    width: 20%;
+    height: auto
     -webkit-animation-name: rotate;
     -moz-animation-name: rotate;
     -ms-animation-name: rotate;
@@ -731,5 +772,4 @@ section.sec.two {
     display: flex;
     flex-direction: row;
 }
-
 
