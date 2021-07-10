@@ -8,3 +8,40 @@
 body {
     min-width: 320px;
 }
+
+#circle svg{
+    display: none;
+}
+
+.inner{
+    width: 100%;
+    justify-content: center;
+}
+
+div.backtxt span {
+    font-size: 4rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0000008f;
+    /* font-family: 'Noto Sans KR'; */
+    line-height: 5.4rem;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+header ul.intro {
+    width: 90%;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 3rem;
+    display: none;
+}
+
+div.pfbox {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    flex-direction: column;
+}
