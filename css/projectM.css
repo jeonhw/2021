@@ -13,6 +13,11 @@ body {
     display: none;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
 .inner{
     width: 100%;
     justify-content: center;
@@ -30,6 +35,16 @@ div.backtxt span {
     cursor: pointer;
 }
 
+section.sec.one .inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: fit-content; */
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
 header ul.intro {
     width: 90%;
     display: flex;
@@ -39,9 +54,128 @@ header ul.intro {
     display: none;
 }
 
+section.sec.one .inner div.hi p {
+    font-size: 3.8rem;
+    font-weight: 5;
+    line-height: 4.7rem;
+    font-family: 'Noto Sans KR';
+}
+
 div.pfbox {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
     flex-direction: column;
+}
+
+.openbtn {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    /* border-right: 1px solid black; */
+    position: fixed;
+    z-index: 10;
+    /* height: 100vh; */
+    border: none;
+    /* border-radius: 15px; */
+    background: black;
+}
+
+section.sec.one .inner div.hi p {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4rem;
+    font-family: 'Noto Sans KR';
+}
+
+section.sec.two {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sec.two > .inner > div > h1{
+    padding: 1rem 0;
+}
+
+div.backtxt {
+    font-size: 12rem;
+    width: 90%;
+}
+
+
+div.pfbox>ul {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    background: #F7F4EF;
+    border-radius: 20px;
+    border: 1px solid #707070;
+    transition: all 0.5s ease;
+    background: rgba(255, 255, 255, 0.4);
+    /* background: rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+
+div.pfbox>ul:nth-child(3) {
+    display: none;
+}
+
+
+div.pfbox>ul li:nth-child(1) {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section.sec.two div.inner>div {
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    /* background: #000; */
+    flex-direction: column;
+    justify-content: center;
+    /* display: none; */
+    margin-bottom: 0rem;
+}
+
+
+div.pfbox h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'poppins';
+}
+
+
+footer .inner .sendbox {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.profile ul {
+    width: 33.3%;
+    text-align: center;
+    line-height: 1.6rem;
+}
+div.profile ul li:nth-child(1) {
+    font-family: 'poppins';
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
 }

@@ -70,7 +70,7 @@ body{
 .openbtn {
     font-size: 2.6rem;
     cursor: pointer;
-    background-color: rgb(255 255 255);
+    background-color: transparent;
     color: black;
     padding: 15px 32px;
     /* border-right: 1px solid black; */
@@ -84,6 +84,8 @@ body{
     /* background-color:black; */
     /* color: white; */
     opacity: 0.6;
+    border-right: 1px solid;
+    border-left: 1px solid;
 }
 
 
@@ -424,7 +426,8 @@ div.profile ul li:nth-child(1){
 }
 
 div.profile ul li{
-    font-weight: 100;
+    /* font-weight: 100; */
+    font-weight: 300;
 }
 
 section.sec.one .inner div.hi{
@@ -469,9 +472,9 @@ section.sec.two .swiper-slide.two {
 }
 
 
-section.sec.two div.inner div> h1{
-    /* color: rgba(0, 0, 0, 0.2); */
-}
+/* section.sec.two div.inner div> h1{
+    color: rgba(0, 0, 0, 0.2);
+} */
 
 section.sec.two div.inner>div {
     display: flex;
